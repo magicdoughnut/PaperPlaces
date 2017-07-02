@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load leaflet_tags %}
+
+
+{% block content %}
+
+
+<h1 class='text-center'> Confirm Area Selection</h1>
+
+Thanks for your selection in range:
+<br/>
+
+SW:  {{SWval}} 
+<br/>
+
+NE: {{NEval}}
+<br/>
+
+{% load static %}
+<img src="{%static 'maps/figure0.png'%}" class="img-responsive center-block" style = "max-height:800px;" >
+<img src="{%static 'maps/figure1.png'%}" class="img-responsive center-block" style = "max-height:800px;" >
+<img src="{%static 'maps/figure2.png'%}" class="img-responsive center-block" style = "max-height:800px;" >
+<img src="{%static 'maps/figure3.png'%}" class="img-responsive center-block" style = "max-height:800px;" >
+<img src="{%static 'maps/figure4.png'%}" class="img-responsive center-block" style = "max-height:800px;" >
+
+
+{% endblock %}
+
+
